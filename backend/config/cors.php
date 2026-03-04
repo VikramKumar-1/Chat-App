@@ -15,11 +15,13 @@ return [
     |
     */
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie'],
+    'paths' => ['api/*', 'sanctum/csrf-cookie', 'broadcasting/auth'],
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => ['https://chat-app-beryl-three-75.vercel.app',
+        'http://localhost:5173'
+    ],
 
     'allowed_origins_patterns' => [],
 
